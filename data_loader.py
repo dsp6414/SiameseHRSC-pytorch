@@ -188,7 +188,7 @@ class OmniglotTest(Dataset):
         img1 = Image.open(self.img1[0])
         img2 = Image.open(img2[0])
         img1 = img1.resize(size, Image.ANTIALIAS).convert('L')
-        img2 = img2.resixe(size, Image.ANTIALIAS).convert('L')
+        img2 = img2.resize(size, Image.ANTIALIAS).convert('L')
         img1 = self.transform(img1)
         img2 = self.transform(img2)
         return img1, img2
